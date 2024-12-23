@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【試作版】Cafe de Herb -心の調合室-</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'M PLUS Rounded 1c', Arial, sans-serif;
+            background: linear-gradient(to bottom, #fffaf0, #f7f1e3);
+        }
+
+        header {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #4a2c2a;
+            background: #fff8e7;
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            width: 1280px;
+            height: 720px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.5em;
+            color: #d32f2f;
+            margin-bottom: 10px;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            background: #e3f2fd;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+            background: #bbdefb;
+            transform: scale(1.05);
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                color: #d32f2f;
+            }
+            50% {
+                transform: scale(1.1);
+                color: #ff5252;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            iframe {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>【試作版】Cafe de Herb -心の調合室-</header>
+    <main>
+        <iframe src="index.html" title="ブラウザゲーム"></iframe>
+    </main>
+    <footer>
+        <p>【匿名OK】感想やフィードバックはこちらから！</p>
+        <a href="https://marshmallow-qa.com/o6i5smez2c69t4c?t=KPb3KM&utm_medium=url_text&utm_source=promotion" target="_blank">マシュマロで感想を送る（ログイン必須）</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2MO7BPJi_6SFAhJyaXhfTYhjFQKqHI3GFyB2oRvZACGHlmQ/viewform?usp=header" target="_blank">Googleフォームでフィードバックを送る</a>
+    </footer>
+</body>
+</html>
